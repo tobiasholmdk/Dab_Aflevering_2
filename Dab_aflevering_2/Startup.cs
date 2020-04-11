@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dab_aflevering_2.DBContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -25,7 +26,9 @@ namespace Dab_aflevering_2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddDbContext<DbContext>(options =>
+            
+            services.AddDbContextPool<DabDBContext>(options =>
+                
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 

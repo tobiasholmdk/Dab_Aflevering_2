@@ -1,14 +1,15 @@
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 using Dab_aflevering_2.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 
 namespace Dab_aflevering_2.DBContext
 {
-    public class DbContext 
-    {
+    public class DabDBContext : DbContext
+    { 
+        public DabDBContext(DbContextOptions<DabDBContext> options)
+            : base(options)
+        { }
         public DbSet<StudentEntity> Students { get; set; }
         public DbSet<TeacherEntity> Teachers { get; set; }
         public DbSet<CourseEntity> Courses { get; set; }

@@ -5,10 +5,10 @@ namespace Dab_aflevering_2.Entities
         public string Id { get; set; }
         public string Number { get; set; }
         public string Lecture { get; set; }
-        public string Help_where { get; set; }
+        public string HelpWhere { get; set; }
         
         // Nav props
-        public int assigmentId { get; set; }
-        public AssignmentEntity assigment { get; set; }
+        public int AssigmentId { get; set; }
+        public AssignmentEntity Assigment { get; set; }
     }
 }

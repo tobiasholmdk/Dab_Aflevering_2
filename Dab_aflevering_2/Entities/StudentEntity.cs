@@ -12,7 +12,7 @@ namespace Dab_aflevering_2.Entities
         public int ExerciseId { get; set; }
         public ExerciseEntity Exercise { get; set; }
         
-        public int Assignmentid { get; set; }
+        public int AssignmentId { get; set; }
         public AssignmentEntity Assignment { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Dab_aflevering_2.Entities
         public int TeacherId { get; set; }
         public TeacherEntity Teacher { get; set; }
         
-        public int assigmentId{get; set;}
-        public AssignmentEntity assigment { get; set; }
+        public int AssigmentId{get; set;}
+        public AssignmentEntity Assigment { get; set; }
     }
 }

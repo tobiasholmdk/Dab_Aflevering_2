@@ -9,9 +9,9 @@ namespace Dab_aflevering_2.Entities
        
         // Nav props
         public int ExerciseId { get; set; }
-        public ExerciseEntity exercise { get; set; }
+        public ExerciseEntity Exercise { get; set; }
         
-        public int assigmentId { get; set; }
-        public AssignmentEntity assigment { get; set; }
+        public int AssigmentId { get; set; }
+        public AssignmentEntity Assigment { get; set; }
     }
 }

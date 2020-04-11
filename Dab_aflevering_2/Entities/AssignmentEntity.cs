@@ -6,9 +6,9 @@ namespace Dab_aflevering_2.Entities
         
         // Nav props
         public int StudentId { get; set; }
-        public StudentEntity student { get; set; }
+        public StudentEntity Student { get; set; }
         
-        public int exerciseId {get; set;}
-        public ExerciseEntity exercise { get; set; }
+        public int ExerciseId {get; set;}
+        public ExerciseEntity Exercise { get; set; }
     }
 }

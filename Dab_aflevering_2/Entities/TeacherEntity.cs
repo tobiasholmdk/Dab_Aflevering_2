@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Dab_aflevering_2.Contracts;
 
 namespace Dab_aflevering_2.Entities
@@ -7,8 +6,10 @@ namespace Dab_aflevering_2.Entities
     {
         public int AuId { get; set; }
         public string Name { get; set; }
-       
-        public ICollection<AssignmentEntity> Assignments{ get; set; }
+
+        // Nav props
         public ICollection<ExerciseEntity> Exercises { get; set; }
+        public ICollection<AssignmentEntity> Assignments { get; set; }
+        public CourseEntity Course { get; set; }
     }
 }

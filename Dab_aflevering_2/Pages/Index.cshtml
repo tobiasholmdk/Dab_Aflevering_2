@@ -4,11 +4,48 @@
     ViewData["Title"] = "Home page";
 }
 
-<button type="button">Add student</button>
-<button type="button">Add teacher</button>
-<button type="button">Add Course</button>
-<button type="button">Add Assignment</button>
-<button type="button">Add Exercise</button>
-<button type="button">Add Help-Request</button>
-<button type="button">Add Review</button>
+<form action="">
+  <label for="name">Student name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="Auid">Student AuID:</label>
+  <input type="text" id="Auid" name="Auid"><br><br>
+  <input type="submit" value="Add Student">
+</form>
 
+<form action="">
+  <label for="name">Teacher name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="Auid">Teacher AuID:</label>
+  <input type="text" id="Auid" name="Auid"><br><br>
+  <input type="submit" value="Add Teacher">
+</form>
+
+<form action="">
+  <label for="name">Course name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="CourseID">CourseID:</label>
+  <input type="text" id="CourseID" name="CourseID"><br><br>
+  <input type="submit" value="Add Course">
+</form>
+
+<form action="">
+  <label for="AssignmentId">Assignment Id:</label>
+  <input type="text" id="AssignmentId" name="AssignmentId"><br><br>
+  <input type="submit" value="Add Assignment">
+</form>
+
+<form action="">
+  <label for="ExNumber">Exercise Number:</label>
+  <input type="text" id="ExNumber" name="ExNumber"><br><br>
+  <label for="Lecture">Lecture:</label>
+  <input type="text" id="Lecture" name="Lecture"><br><br>
+  <input type="submit" value="Add Exercise">
+</form>
+
+<form action="/Index.GetAll">
+  <label for="HelpWhere">Help where:</label>
+  <input type="text" id="HelpWhere" name="HelpWhere"><br><br>
+  <label for="ExNumber">Exercise number:</label>
+  <input type="text" id="ExNumb" name="ExNumber"><br><br>
+  <input type="submit" value="Add help-request">
+</form>

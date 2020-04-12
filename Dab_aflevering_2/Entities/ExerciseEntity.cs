@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Dab_aflevering_2.Entities
 {
     public class ExerciseEntity
@@ -8,7 +10,6 @@ namespace Dab_aflevering_2.Entities
         public string HelpWhere { get; set; }
         
         // Nav props
-        public int AssigmentId { get; set; }
-        public AssignmentEntity Assigment { get; set; }
+        public ICollection<AssignmentEntity> Assignments { get; set; }
     }
 }

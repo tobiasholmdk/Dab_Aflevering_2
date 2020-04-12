@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Dab_aflevering_2.Contracts;
 
 namespace Dab_aflevering_2.Entities
@@ -7,11 +8,7 @@ namespace Dab_aflevering_2.Entities
         public int AuId { get; set; }
         public string Name { get; set; }
        
-        // Nav props
-        public int ExerciseId { get; set; }
-        public ExerciseEntity Exercise { get; set; }
-        
-        public int AssigmentId { get; set; }
-        public AssignmentEntity Assigment { get; set; }
+        public ICollection<AssignmentEntity> Assignments{ get; set; }
+        public ICollection<ExerciseEntity> Exercises { get; set; }
     }
 }

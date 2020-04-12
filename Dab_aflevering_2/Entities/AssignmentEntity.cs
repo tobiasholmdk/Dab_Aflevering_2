@@ -8,7 +8,7 @@ namespace Dab_aflevering_2.Entities
         
         public TeacherEntity Teacher { get; set; }
         public CourseEntity Course { get; set; }
-        public ICollection<StudentEntity> Students { get; set; }
+        public ICollection<AssignmentStudentEntity> Students { get; set; }
         //public ICollection<ExerciseEntity> Exercises { get; set; }
     }
 }

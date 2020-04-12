@@ -1,7 +1,10 @@
+using System.Collections.Generic;
+
 namespace Dab_aflevering_2.Entities
 {
     public class StudentEntity
     {
+        public int Id { get; set; }
         public int AuId { get; set; }
         public string Name { get; set; }
 

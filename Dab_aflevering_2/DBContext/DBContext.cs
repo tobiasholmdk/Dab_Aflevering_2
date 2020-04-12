@@ -15,5 +15,7 @@ namespace Dab_aflevering_2.DBContext
         public DbSet<CourseEntity> Courses { get; set; }
         public DbSet<ExerciseEntity> Exercises { get; set; }
         public DbSet<AssignmentEntity> Assignments { get; set; }
+        public DbSet<AssignmentStudentEntity> AssignmentStudents { get; set; }
+        public DbSet<StudentCourseEntity> StudentsCourses { get; set; }
     }
 }

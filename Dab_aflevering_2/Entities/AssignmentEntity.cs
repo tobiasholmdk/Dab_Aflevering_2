@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Dab_aflevering_2.Entities
 {
     public class AssignmentEntity
@@ -9,6 +11,5 @@ namespace Dab_aflevering_2.Entities
         public TeacherEntity Teacher { get; set; }
         public CourseEntity Course { get; set; }
         public ICollection<AssignmentStudentEntity> Students { get; set; }
-        //public ICollection<ExerciseEntity> Exercises { get; set; }
     }
 }

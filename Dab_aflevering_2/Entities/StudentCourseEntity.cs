@@ -7,10 +7,13 @@ namespace Dab_aflevering_2.Entities
 {
     public class StudentCourseEntity
     {
-        public StudentEntity Students { get; set; }
+        public int Id { get; set; }
         public int StudentAuId { get; set; }
-        public CourseEntity Courses { get; set; }
+        public StudentEntity Students { get; set; }
+        
         public int CourseId { get; set; }
+        public CourseEntity Courses { get; set; }
+        
         public int Semester { get; set; }
     }
 }
